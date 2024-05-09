@@ -2,8 +2,12 @@ import React from 'react';
 import { Amplify } from 'aws-amplify';
 
 import { Authenticator } from '@aws-amplify/ui-react';
-import { Text, View, Image, useTheme } from '@aws-amplify/ui-react';
+import { View, Image, useTheme } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
+
+import {
+  SongCardCollection 
+} from './ui-components';
 
 import awsExports from './aws-exports';
 Amplify.configure(awsExports);
@@ -25,13 +29,14 @@ const components = {
 
 export default function App() {
   return (
-    <div>
-      <components.Header />
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh' }}>
       <Authenticator socialProviders={['google', 'amazon']}>
         {({ signOut, user }) => (
           <main>
-            <h1>Hello {user.username}</h1>
-            <button onClick={signOut}>Sign out</button>
+            <components.Header />
+            <div style={{ textAlign: 'center', flexGrow: 1 }}>
+              <SongCardCollection />
+            </div>
           </main>
         )}
       </Authenticator>
