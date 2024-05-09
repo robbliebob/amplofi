@@ -6,6 +6,7 @@ import { View, Image, useTheme } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 import {
+  ShareButton,
   SongCardCollection 
 } from './ui-components';
 
@@ -28,6 +29,7 @@ const components = {
 };
 
 export default function App() {
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh' }}>
       <Authenticator socialProviders={['google', 'amazon']}>
@@ -35,6 +37,7 @@ export default function App() {
           <main>
             <components.Header />
             <div style={{ textAlign: 'center', flexGrow: 1 }}>
+              <ShareButton />
               <SongCardCollection />
             </div>
           </main>

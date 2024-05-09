@@ -24,8 +24,9 @@ export default function SongCard(props) {
       alignItems="unset"
       justifyContent="unset"
       position="relative"
+      borderRadius="16px"
       padding="0px 0px 0px 0px"
-      backgroundColor="rgba(255,255,255,1)"
+      backgroundColor="rgba(242,243,243,1)"
       {...getOverrideProps(overrides, "SongCard")}
       {...rest}
     >
@@ -53,6 +54,7 @@ export default function SongCard(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           objectFit="cover"
+          src=""
           {...getOverrideProps(overrides, "image")}
         ></Image>
         <Flex
@@ -211,7 +213,7 @@ export default function SongCard(props) {
           top="6px"
           left="137px"
           size="small"
-          isDisabled={false}
+          isDisabled=""
           variation="primary"
           children="Reply as Curator"
           {...getOverrideProps(overrides, "Button38463332")}

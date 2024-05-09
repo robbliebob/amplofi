@@ -23,7 +23,7 @@ export default function SongCardCollection(props) {
   const [instanceKey, setInstanceKey] = React.useState("newGuid");
   const [loading, setLoading] = React.useState(true);
   const [maxViewed, setMaxViewed] = React.useState(1);
-  const pageSize = 4;
+  const pageSize = 6;
   const isPaginated = true;
   React.useEffect(() => {
     nextToken[instanceKey] = "";
@@ -81,7 +81,6 @@ export default function SongCardCollection(props) {
     <div>
       <Collection
         type="list"
-        isSearchable={true}
         searchPlaceholder="Search..."
         direction="column"
         justifyContent="left"
