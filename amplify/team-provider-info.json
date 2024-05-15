@@ -20,6 +20,9 @@
       },
       "auth": {
         "amplofi2": {}
+      },
+      "api": {
+        "amplofi2": {}
       }
     }
   }
