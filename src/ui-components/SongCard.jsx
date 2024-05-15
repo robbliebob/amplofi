@@ -12,6 +12,7 @@ import MyIcon from "./MyIcon";
 export default function SongCard(props) {
   const { song, overrides, ...rest } = props;
   const buttonThreeEightFourSixThreeThreeOneNineOnClick = useNavigateAction({
+    target: "_blank",
     type: "url",
     url: song?.url,
   });
@@ -54,7 +55,6 @@ export default function SongCard(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src=""
           {...getOverrideProps(overrides, "image")}
         ></Image>
         <Flex
@@ -213,7 +213,7 @@ export default function SongCard(props) {
           top="6px"
           left="137px"
           size="small"
-          isDisabled=""
+          isDisabled={false}
           variation="primary"
           children="Reply as Curator"
           {...getOverrideProps(overrides, "Button38463332")}

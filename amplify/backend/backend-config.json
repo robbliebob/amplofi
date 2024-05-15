@@ -1,6 +1,6 @@
 {
   "api": {
-    "AmpLofi": {
+    "amplofi2": {
       "dependsOn": [],
       "output": {
         "authConfig": {
@@ -23,7 +23,7 @@
     }
   },
   "auth": {
-    "AmpLofi": {
+    "amplofi2": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -54,25 +54,25 @@
     }
   },
   "parameters": {
-    "AMPLIFY_storage_amplofi00d327c7_bucketName": {
+    "AMPLIFY_storage_amplofi23bf5a693_bucketName": {
       "usedBy": [
         {
           "category": "storage",
-          "resourceName": "amplofi00d327c7"
+          "resourceName": "amplofi23bf5a693"
         }
       ]
     },
-    "AMPLIFY_storage_amplofi00d327c7_region": {
+    "AMPLIFY_storage_amplofi23bf5a693_region": {
       "usedBy": [
         {
           "category": "storage",
-          "resourceName": "amplofi00d327c7"
+          "resourceName": "amplofi23bf5a693"
         }
       ]
     }
   },
   "storage": {
-    "amplofi00d327c7": {
+    "amplofi23bf5a693": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "S3",

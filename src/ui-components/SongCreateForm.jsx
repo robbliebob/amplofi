@@ -54,7 +54,7 @@ export default function SongCreateForm(props) {
     title: [],
     artist: [],
     Description: [],
-    url: [{ type: "URL" }],
+    url: [],
   };
   const runValidationTasks = async (
     fieldName,
@@ -76,8 +76,8 @@ export default function SongCreateForm(props) {
   return (
     <Grid
       as="form"
-      rowGap={tokens.space.large.value}
-      columnGap={tokens.space.large.value}
+      rowGap="15px"
+      columnGap="15px"
       padding={tokens.space.large.value}
       onSubmit={async (event) => {
         event.preventDefault();
@@ -140,7 +140,7 @@ export default function SongCreateForm(props) {
       {...rest}
     >
       <Heading
-        children="Upload your latest song!"
+        children="Share your latest song!"
         {...getOverrideProps(overrides, "SectionalElement0")}
       ></Heading>
       <TextField
@@ -225,8 +225,8 @@ export default function SongCreateForm(props) {
         {...getOverrideProps(overrides, "Description")}
       ></TextField>
       <TextField
-        label="YouTube Link"
-        descriptiveText="Your song must be uploaded to YouTube."
+        label="YouTube/Spotify Link"
+        descriptiveText="All songs MUST be uploaded to YouTube or Spotify"
         isRequired={false}
         isReadOnly={false}
         value={url}
@@ -266,7 +266,7 @@ export default function SongCreateForm(props) {
           {...getOverrideProps(overrides, "ClearButton")}
         ></Button>
         <Flex
-          gap={tokens.space.large.value}
+          gap="15px"
           {...getOverrideProps(overrides, "RightAlignCTASubFlex")}
         >
           <Button

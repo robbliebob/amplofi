@@ -41,8 +41,6 @@ export declare type SocialPostOverridesProps = {
     "Read more29766870"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type SocialPostProps = React.PropsWithChildren<Partial<FlexProps> & {
-    song?: any;
-} & {
     overrides?: SocialPostOverridesProps | undefined | null;
 }>;
 export default function SocialPost(props: SocialPostProps): React.ReactElement;

@@ -1,28 +1,25 @@
 {
-  "staging": {
+  "main": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplofi-staging-aa502-authRole",
-      "UnauthRoleArn": "arn:aws:iam::533266968225:role/amplify-amplofi-staging-aa502-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::533266968225:role/amplify-amplofi-staging-aa502-authRole",
+      "AuthRoleName": "amplify-amplofi2-main-787ea-authRole",
+      "UnauthRoleArn": "arn:aws:iam::533266968225:role/amplify-amplofi2-main-787ea-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::533266968225:role/amplify-amplofi2-main-787ea-authRole",
       "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-amplofi-staging-aa502-deployment",
-      "UnauthRoleName": "amplify-amplofi-staging-aa502-unauthRole",
-      "StackName": "amplify-amplofi-staging-aa502",
-      "StackId": "arn:aws:cloudformation:us-east-2:533266968225:stack/amplify-amplofi-staging-aa502/f1bfe9a0-f1cd-11ee-870e-064e4cb27989",
-      "AmplifyAppId": "d2bgcqfzgyyk5z"
+      "DeploymentBucketName": "amplify-amplofi2-main-787ea-deployment",
+      "UnauthRoleName": "amplify-amplofi2-main-787ea-unauthRole",
+      "StackName": "amplify-amplofi2-main-787ea",
+      "StackId": "arn:aws:cloudformation:us-east-2:533266968225:stack/amplify-amplofi2-main-787ea/21c29290-12cd-11ef-9e73-02d63ffa969f",
+      "AmplifyAppId": "d2xvcvo1golea5"
     },
     "categories": {
       "storage": {
-        "amplofi00d327c7": {
-          "bucketName": "amplify-testapp2-staging-b6a17-deployment",
+        "amplofi23bf5a693": {
+          "bucketName": "amplofireal",
           "region": "us-east-2"
         }
       },
-      "api": {
-        "AmpLofi": {}
-      },
       "auth": {
-        "AmpLofi": {}
+        "amplofi2": {}
       }
     }
   }

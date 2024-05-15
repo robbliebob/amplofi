@@ -10,7 +10,7 @@ import { getOverrideProps } from "./utils";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function SocialPost(props) {
-  const { song, overrides, ...rest } = props;
+  const { overrides, ...rest } = props;
   return (
     <Flex
       gap="16px"
@@ -84,7 +84,7 @@ export default function SocialPost(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children={song?.title}
+              children="New Amplify Studio gives designers the ability to export UI to React code"
               {...getOverrideProps(
                 overrides,
                 "New Amplify Studio gives designers the ability to export UI to React code"
@@ -122,7 +122,7 @@ export default function SocialPost(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children={song?.artist}
+                children="Nikhil S"
                 {...getOverrideProps(overrides, "Nikhil S")}
               ></Text>
               <Text
@@ -144,7 +144,7 @@ export default function SocialPost(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children={song?.createdAt}
+                children="2nd December 2021"
                 {...getOverrideProps(overrides, "2nd December 2021")}
               ></Text>
             </Flex>

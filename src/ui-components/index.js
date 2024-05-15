@@ -18,7 +18,6 @@ export { default as FormCheckout } from "./FormCheckout";
 export { default as HeroLayout1 } from "./HeroLayout1";
 export { default as HeroLayout2 } from "./HeroLayout2";
 export { default as ItemCard } from "./ItemCard";
-export { default as LoginPage } from "./LoginPage";
 export { default as Logo } from "./Logo";
 export { default as LogoWithText } from "./LogoWithText";
 export { default as MarketingFooter } from "./MarketingFooter";

@@ -10,7 +10,7 @@ import { getOverrideProps } from "./utils";
 import MyIcon from "./MyIcon";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function CommentCard(props) {
-  const { song, overrides, ...rest } = props;
+  const { overrides, ...rest } = props;
   return (
     <Flex
       gap="16px"
@@ -172,7 +172,7 @@ export default function CommentCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children={song?.title}
+                children="Scott"
                 {...getOverrideProps(overrides, "Scott")}
               ></Text>
             </Flex>

@@ -6,24 +6,10 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps, useAuth } from "./utils";
-import { generateClient } from "aws-amplify/api";
-import { createSong } from "../graphql/mutations";
+import { getOverrideProps } from "./utils";
 import { Button, Flex } from "@aws-amplify/ui-react";
-const client = generateClient();
 export default function ShareButton(props) {
   const { overrides, ...rest } = props;
-  const authAttributes = useAuth().user?.attributes ?? {};
-  const buttonOnClick = async () => {
-    await client.graphql({
-      query: createSong.replaceAll("__typename", ""),
-      variables: {
-        input: {
-          artist: authAttributes["preferred_username"],
-        },
-      },
-    });
-  };
   return (
     <Flex
       gap="0"
@@ -46,9 +32,6 @@ export default function ShareButton(props) {
         isDisabled={false}
         variation="primary"
         children="Share Your Latest Song!"
-        onClick={() => {
-          buttonOnClick();
-        }}
         {...getOverrideProps(overrides, "Button")}
       ></Button>
     </Flex>

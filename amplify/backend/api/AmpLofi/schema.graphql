@@ -1,7 +1,0 @@
-type Song @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  title: String
-  artist: String
-  Description: String
-  url: AWSURL
-} 
